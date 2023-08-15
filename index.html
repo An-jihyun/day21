@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <img id="bgImg" src="src/bg-game.webp" />
+    <div id="game">
+      <header>
+        <h1>Random Number Game</h1>
+        <img id="catImg" src="src/cat.jpg" />
+      </header>
+      <main>
+        <form id="gameForm">
+          <div class="gameForm__range">
+            <span>Generate a number between 0 and</span>
+            <input class="gameForm__range-input" type="number" min="0" required />
+          </div>
+          <div id="gameForm__chose">
+            <span>Guess the number: </span>
+            <input class="gameForm__chose-input" type="number" min="0" required />
+            <button class="btn" type="submit">P l a y</button>
+          </div>
+        </form>
+        <div class="randomGameResult hidden">
+          <p class="randomGameResult__num"></p>
+          <p class="randomGameResult__game"></p>
+        </div>
+      </main>
+    </div>
+    <div class="best-size">
+      <h1>Your screen is toooo small :o</h1>
+    </div>
+  </body>
+  <script src="random.js"></script>
+</html>
